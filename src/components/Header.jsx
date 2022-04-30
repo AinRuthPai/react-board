@@ -9,24 +9,24 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <Link to='/web0' className='nav_link'>
+            <Link to='/web/0' className='nav_link'>
               WEB
             </Link>
           </li>
           <li>
-            <Link to='/css0' className='nav_link'>
+            <Link to='/css/0' className='nav_link'>
               CSS
             </Link>
           </li>
           <li>
-            <Link to='/javascript0' className='nav_link'>
-              JavaScript
-            </Link>
+            {/* <Link to='/javascript/0' className='nav_link'> */}
+            JavaScript
+            {/* </Link> */}
           </li>
           <li>
-            <Link to='/react0' className='nav_link'>
-              React
-            </Link>
+            {/* <Link to='/react/0' className='nav_link'> */}
+            React
+            {/* </Link> */}
           </li>
           <li>
             <Link to='/board' className='nav_link'>

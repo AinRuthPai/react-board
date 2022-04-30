@@ -7,7 +7,7 @@ function Aside(props) {
         {props.data.map((array, i) => {
           return (
             <li>
-              <Link to={`/web${i}`}>{props.data[i].title}</Link>
+              <Link to={`/${props.data[0].link}/${i}`}>{props.data[i].title}</Link>
             </li>
           );
         })}

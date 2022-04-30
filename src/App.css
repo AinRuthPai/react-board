@@ -1,105 +1,50 @@
-@import "./reset.css";
+body {
+  margin: 0;
+  text-align: center;
+}
+
+ul,
+ol {
+  list-style: none;
+}
 
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
-.nav_link {
-  text-decoration: none;
-  color: black;
-  transition: all 0.2s ease;
-  border-radius: 10px;
-  padding: 0.3rem 0.5rem;
-}
-
-.nav_link:hover {
-  background-color: rgb(208, 208, 208);
-  box-shadow: 1px 1px 1px 1px rgb(173, 173, 173);
-}
-
-nav ul,
-.main_section {
+header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header {
-  text-align: center;
-  padding: 2rem 0;
+header nav ul li {
+  margin: 2rem;
 }
 
-h1 {
-  font-size: 1.7rem;
-  font-weight: 700;
+aside a {
+  display: block;
+  margin: 1rem;
+  font-size: 18px;
 }
 
-nav {
-  margin-top: 3rem;
-}
-
-nav li {
-  margin: 0 3rem;
-}
-
-container {
-  display: flex;
-}
-
-aside {
-  height: 80vh;
-  width: 15%;
-  line-height: 1.5rem;
-}
-
-aside ul {
-  margin: 2rem 0;
-}
-
-aside li {
-  margin-top: 0.8rem;
-  margin-left: 2rem;
-  padding-left: 1rem;
-  font-size: 1.1rem;
-}
-
-.main_section {
-  width: 85%;
-  flex-direction: column;
-}
-
-.video_article {
-  margin-bottom: 3rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.text_article li {
-  margin-top: 0.7rem;
+.main_container {
+  display: grid;
+  grid-template-columns: 300px auto;
 }
 
 footer {
-  text-align: center;
-  height: 7rem;
-  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 200px;
 }
 
-footer p {
-  margin: 1.2rem 0;
-}
-
-.main_img {
-  width: 100%;
-}
-
-.main_img img {
-  width: 100%;
-}
-
-.board_container {
-  text-align: center;
+footer a {
+  color: white;
 }

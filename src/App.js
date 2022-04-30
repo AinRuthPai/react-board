@@ -17,10 +17,10 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<MainPage />}></Route>
-          <Route path='/web0' element={<WebPage />}></Route>
-          <Route path='/css0' element={<CssPage />}></Route>
-          <Route path='/javascript0' element={<JavascriptPage />}></Route>
-          <Route path='/react0' element={<ReactPage />}></Route>
+          <Route exact path='/web/:id' element={<WebPage />}></Route>
+          <Route path='/css/:id' element={<CssPage />}></Route>
+          <Route path='/javascript/:id' element={<JavascriptPage />}></Route>
+          <Route path='/react/:id' element={<ReactPage />}></Route>
           <Route path='/board' element={<BoardPage />}></Route>
           <Route path='*' element={<NotFound />}></Route>
         </Routes>
